@@ -19,7 +19,7 @@ Technologies Used
 - **Reset.css** – consistent base across browsers
 
 Live Demo
- [View the project here]
+ [View the project here]()
 
 What I Learned
 - Structuring a multipurpose landing page
