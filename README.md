@@ -1,5 +1,5 @@
 # velocity_website
-Simple landing page with HTML, CSS, and JS
+Responsive landing page built with **HTML, CSS, and JavaScript**
 
 A clean and responsive landing page built with **HTML, CSS, and JavaScript**.  
 This project demonstrates a professional one-page website structure — perfect for showcasing creative services or an agency profile.
