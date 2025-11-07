@@ -1,0 +1,425 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 970px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    color:#676770;
+    line-height: 1.8;
+}
+
+.title {
+    margin-bottom: 17px;
+
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 5px;
+
+    color:#676770;
+
+    text-transform: uppercase;
+}
+.subtitle {
+    font-size: 17px;
+    line-height: 1.2;
+    letter-spacing: 3px;
+
+    color: #8E8E9C;
+
+    text-transform: uppercase;
+}
+.title_wrap {
+    margin-bottom: 60px;
+}
+
+/* --------------------------header-------------------------------- */
+.logo {
+    font-size: 25px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+
+    color: #69B9FF;
+}
+
+.header {
+    padding: 20px 0;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+
+    background-color: #fff;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header_nav a {
+    font-size: 16px;
+
+    color: #676770;
+    transition: color 0.2s;
+}
+.header_nav a:hover {
+    color: #69B9FF;
+}
+.header_nav a:active {
+    color: #0082F3;
+}
+.header_nav ul {
+    display: flex;
+}
+.header_nav li + li {
+    margin-left: 40px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---------------------main---------------------------- */
+
+/* -------------------welcome----------------------------- */
+.welcome {
+    min-height: 700px;
+    padding: 195px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+    text-align: center;
+
+    background-color: #282936;
+    background-image: url('./images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.welcome_heading {
+    font-size: 59px;
+    line-height: 1;
+
+    margin-bottom: 100px;
+
+    text-transform: uppercase;
+
+    color: #676770;
+}
+
+.link_primary {
+    display: inline-block;
+
+    padding: 10px 30px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background-color: #69B9FF;
+    border-radius: 4px;
+
+    transition: background-color 0.2s;
+}
+.link_primary:hover {
+    background-color: #0082F3;
+}
+.link {
+    display: inline-block;
+
+    padding: 10px 30px;
+
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background-color: #69B9FF;
+    border-radius: 4px;
+}
+.link:hover {
+    background-color: #0082F3;
+}
+
+/* вот эта запись значит, что мы выбираем дочерние элементы в родительском элементе, 
+при этом не зная какие это именно элементы (это может быть ссылка, кнопка и тд). 
+Таким образом мы выбираем элемент, следующий за первым и тд. */
+.welcome_links > * + * {
+    margin-left: 20px;
+}
+
+
+/* ------------------------about--------------------------------*/
+.about .cards_wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.about .card {
+    padding: 45px 16px 50px 16px;
+    max-width: 300px;
+    border: 1px solid #DCEBF7;
+    border-radius: 5px;
+}
+.common_section {
+    text-align: center;
+    padding: 80px 0;
+}
+
+.about .card h4 {
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 5px;
+
+    color:#676770;
+
+    text-transform: uppercase;
+}
+
+.icon {
+    margin-bottom: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+
+/* -------------------- services --------------------------------*/
+.common_section_dark {
+    background-color: #192024;
+    color: #fff;
+}
+
+.services .cards_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link_transparent {
+    background-color: #192024;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+    margin-top: 15px;
+}
+.services h3 {
+    color: #fff;
+}
+.services .subtitle {
+    color: #fff;
+}
+.services .card {
+    width: 46%;
+}
+.services img{
+    width: 340px;
+    height: 300px;
+
+    margin-bottom: 20px;
+}
+.services .card h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+
+    margin-bottom: 15px;
+}
+
+/* ---------------------------tab section----------------------------------- */
+.tabs_nav button {
+    padding: 0 30px;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    color: #fff;
+    background-color: #92A0AD;
+
+    border-radius: 4px;
+}
+.tabs_nav .active {
+    background-color:#0082F3;
+}
+.tabs_nav button:active {
+    background-color:#0082F3;
+}
+.tabs_nav button:hover {
+    background-color:#676770;
+}
+.tabs_nav button + button {
+    margin-left: 15px;
+}
+.tabs_nav {
+    margin-bottom: 50px;
+}
+
+.tabs_item {
+    animation: fade 1s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.tabs_item img {
+    margin-bottom: 15px;
+}
+.tabs_item h4 {
+    margin-bottom: 15px;
+
+    font-size: 31px;
+    line-height: 36px;
+
+    color:#676770;
+}
+.tabs_desc{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+}
+
+/* --------------------------------footer----------------------------------- */
+.footer {
+    background-color: #192024;
+    padding-top: 20px;
+}
+.footer_desc h4 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
+    font-size: 18px;
+    letter-spacing: 4px;
+    line-height: 1;
+
+    color:#8E8E9C;
+
+    text-transform: uppercase;
+}
+.footer_container {
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 20px 40px;
+}
+.footer_container > * {
+    width: 30%;
+    min-width: 270px;
+}
+.footer_about {
+    color:#8E8E9C;
+    text-align: center;
+    line-height: 20px;
+}
+.footer_about p {
+    color:#8E8E9C;
+}
+.footer_links li {
+    color:#8E8E9C;
+    margin: 10px 0;
+    border-bottom: 1px solid #92A0AD;
+}
+.footer_social a {
+    color:#8E8E9C !important;
+    
+}
+.footer_social li{
+    margin-bottom: 10px;
+    border-bottom: 1px solid #92A0AD;
+}
+.icon_footer {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.footer li {
+    height: 25px;
+}
+.footer_copy {
+    height: 150px;
+    text-align: center;
+    padding: 70px;
+}
+
+.hide {
+    display: none !important;
+}
+/* -------------------------adaptation------------------------------------------- */
+@media (max-width: 660px) {
+    .tabs_nav button {
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        padding: 10px 30px;
+    }
+    .tabs_nav button + button {
+        margin-left: auto;
+    }
+    .tabs_nav {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .services .cards_wrap {
+        flex-direction: column;
+        align-items:center;
+        gap: 40px;
+    }
+    .services .card {
+        width: 80%;
+    }
+    .title_wrap {
+        margin-bottom: 40px;
+    }
+    .services .card h4{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_nav li + li {
+        margin-left: 20px;
+    }
+    .welcome_heading {
+        font-size: 40px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .welcome_links a {
+        display:  block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .welcome_links > * + * {
+        margin-top: 20px;
+    }
+    body {
+        font-size: 12px;
+    }
+    .about .card h4 {
+        font-size: 16px;
+    }
+    .tabs_item h4 {
+        font-size: 24px;
+    }
+}
+
